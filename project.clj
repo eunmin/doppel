@@ -1,4 +1,4 @@
-(defproject doppel/lein-template "0.1.0-SNAPSHOT"
+(defproject doppel/lein-template "0.1.1-SNAPSHOT"
   :description "Simple web application template for Leiningen"
   :url "http://github.com/eunmin/doppel"
   :license {:name "Eclipse Public License"
