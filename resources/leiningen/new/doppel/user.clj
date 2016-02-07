@@ -27,7 +27,9 @@
   (update-in service [::server/interceptors] #(vec (cons (exceptions) %))))
 
 (defn run-dev [& args]
-  (println "\nCreating your [DEV] server...")
+  (let [http (:http (config (env :config "config.edn")))
+        start-msg (str "\nCreating your [DEV] server... http://" (:host http) ":" (:port http))]
+      (println start-msg))
   (selmer/cache-off!)
   (selmer/set-resource-path! (io/resource "templates"))
   (watch)
