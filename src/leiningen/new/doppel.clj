@@ -32,6 +32,8 @@
              ["src/{{dirs}}/handler/home.clj" (render "home.clj" data)]
              "src/{{dirs}}/repository"
              ["resources/config.edn" (render "config.edn" data)]
+             ["README.md" (render "README.md" data)]
+             [".gitignore" (resource ".gitignore")]
              ["resources/templates/home/index.html" (resource "index.html")]
              "resources/migrations"
              "resources/public")))
